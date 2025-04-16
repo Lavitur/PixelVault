@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Centi's PixelVault - Checkout</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav id="mainNav">
+    <a href="Cart.html">Cart</a>
+    <a href="Checkout.html">Checkout</a>
+    <a href="Products.html">Products</a>
+    <a href="Dashboard.html">Dashboard</a>
+    <a href="#" id="logoutLink" onclick="logout()">Logout</a>
+  </nav>
+  <div class="container">
+    <h1>Checkout</h1>
+    <form id="checkoutForm">
+      <input type="text" id="shipName" placeholder="Shipping Name" required>
+      <input type="text" id="shipAddress" placeholder="Shipping Address" required>
+      <input type="email" id="shipEmail" placeholder="Email" required>
+      <input type="submit" value="Confirm">
+      <button type="button" onclick="window.location.href='Cart.html'">Cancel</button>
+    </form>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+</html>

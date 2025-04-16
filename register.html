@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Centi's PixelVault - Register</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Site remains locked so navigation is minimal -->
+  <div class="container">
+    <h1>Centi's PixelVault</h1>
+    <p class="slogan">Unlock Your Retro Power!</p>
+    <h2>Register</h2>
+    <form id="registrationForm">
+      <input type="text" id="firstName" placeholder="First Name" required>
+      <input type="text" id="lastName" placeholder="Last Name" required>
+      <input type="date" id="dob" placeholder="Date of Birth" required>
+      <select id="gender" required>
+        <option value="">Select Gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+      <input type="text" id="phone" placeholder="Phone Number" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="text" id="trn" placeholder="Tax Registration Number (000-000-000)" required>
+      <input type="password" id="password" placeholder="Password (min 8 characters)" required>
+      <input type="submit" value="Register">
+      <button type="button" onclick="resetRegistration()">Cancel</button>
+      <p id="regMsg" class="error"></p>
+    </form>
+    <p>Already have an account? <a href="Login.html">Login here</a>.</p>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+</html>

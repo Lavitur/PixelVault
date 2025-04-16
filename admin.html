@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Centi's PixelVault - Admin Panel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav id="mainNav">
+    <a href="Products.html">Products</a>
+    <a href="Admin.html">Admin Panel</a>
+    <a href="#" id="logoutLink" onclick="logout()">Logout</a>
+  </nav>
+  <div class="container">
+    <h1>Admin Panel</h1>
+    <section id="adminControls">
+      <h2>Manage Products</h2>
+      <div>
+        <h3>Add New Product</h3>
+        <form id="addProductForm">
+          <input type="text" id="pName" placeholder="Product Name" required>
+          <input type="number" id="pPrice" placeholder="Price" step="0.01" required>
+          <input type="number" id="pStock" placeholder="Stock Quantity" required>
+          <input type="text" id="pDesc" placeholder="Description" required>
+          <input type="text" id="pImage" placeholder="Image Path (e.g., images/new.png)" required>
+          <input type="submit" value="Add Product">
+        </form>
+      </div>
+      <div>
+        <h3>Current Products</h3>
+        <div id="adminProductList"></div>
+      </div>
+    </section>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+</html>
